@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Lowtabenko Pizza</title>
@@ -8,189 +8,92 @@
         body {
             background-color: black;
             color: white;
-            font-style: normal;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 0;
-            margin: 0;
-        }
-        .ma {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
-        .ppb {
-            border: 2px solid white;
-            overflow: auto;
-            width: 520px;
-            height: 300px;
-            padding: 20px 30px;
-            margin: 0;
-            border-radius: 15px;
-            left: 50px;
-            position: relative;
-            z-index: 1;
-        }
-        .ppb h2 {
-            font-size: 35px;
-            font-family: sans-serif;
-            color: green;
-        }
-        .ppb p {
-            font-size: 20px;
-            font-family: sans-serif;
-            color: white;
-        }
-        button {
-            font-size: 17px;
-            color: black;
-            background-color: red;
-            border-radius: 15px;
-            cursor: pointer;
-        }
-        button:hover {
-            transform: scale(1.05);
-        }
-        img {
-            position: relative;
-            z-index: 2;
-            padding: 0;
-            margin: 0;
-        }
-        .bb {
-            left: 100px;
-            width: 650px;
-        }
-        .ha {
-            left: 75px;
-        }
-        .pe {
-            margin-right: 100px;
-            width: 650px;
-            position: relative;
-            z-index: 2;
-        }
-        .sw {
-            left: 75px;
-            width: 610px;
-        }
-        .lol {
-            position: relative;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-        }
-        .lol img {
-            position: absolute;
-            margin-right: 400px;
-            width: 600px;
-        }
-        .lol h1 {
-            position: relative;
-            margin-left: 1000px;
-            font-size: 100px;
             font-family: 'Creepster', cursive;
-            color: red;
-            text-shadow: 2px 2px 8px black;
-            padding: 3px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             margin: 0;
-            z-index: 3;
+            padding: 0;
         }
-        .bacon {
-            height: 620px;
-            width: 450px;
-            bottom: 100px;
+
+        h1 {
+            font-size: 48px;
+            margin-top: 20px;
         }
-        .paprika {
-            height: 700px;
-            width: 500px;
-            left: 65px;
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .item {
+            margin: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .item img:hover {
+            transform: scale(1.1);
+        }
+
+        .item p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .logo {
+            margin-left: -60px;
+            height: 300px;
+            width: 100px;
         }
     </style>
 </head>
 <body>
+    <h1>Lowtabenko Pizza</h1>
+    <img src="img/lowtab.PNG" class="logo">
 
-    <div class="lol">
-        <img src="img/tomato.png" alt="Tomato">
-        <h1>Lowtab Pizza</h1>
-    </div>
-
-    <div class="ma">
-        <div class="ppb">
-            <h2>PIZZA MARGARITA</h2>
-            <p>Ingredients: tomato sauce, mozzarella, fresh tomatoes, oregano, basil.</p>
-            <p>Description: A true Italian classic — light, flavorful, and fresh, with melted cheese and the aroma of basil in every bite.</p>
-            <p><b>Price: 15$</b> size: 30cm</p>
-            <p><button>add to cart</button></p>
+    <div class="menu">
+        <div class="item">
+            <img src="img/tomato.PNG" alt="Tomato Pizza">
+            <p>Tomato Pizza</p>
         </div>
-        <img src="img/margarita.png" alt="Pizza Margarita">
-    </div>
-
-    <div class="ma">
-        <img src="img/bbq.png" class="bb" alt="BBQ Chicken">
-        <div class="ppb">
-            <h2>PIZZA BBQ CHICKEN</h2>
-            <p>Ingredients: BBQ sauce, chicken fillet, mozzarella, red onion, parsley.</p>
-            <p>Description: Smoky BBQ flavor meets tender chicken and juicy onion — a rich, hearty choice for lovers of bold taste.</p>
-            <p><b>Price: 20$</b> size: 30cm</p>
-            <p><button>add to cart</button></p>
+        <div class="item">
+            <img src="img/margarita.PNG" alt="Margarita">
+            <p>Margarita</p>
         </div>
-        <img class="bacon" src="img/bacon.png" alt="Bacon">
-    </div>
-
-    <div class="ma">
-        <img class="paprika" src="img/paprika.png" alt="Paprika" style="margin-left: 50px;">
-        <div class="ppb" style="margin-left: -50px;">
-            <h2>PIZZA LOWTABENKO</h2>
-            <p>Ingredients: tomato sauce, mozzarella, sausage, chicken, mushrooms, black olives, red onion, green bell pepper, tomatoes.</p>
-            <p>Description: The ultimate flavor explosion — a loaded pizza packed with meats, veggies, and melted cheese for those who want everything in one bite.</p>
-            <p><b>Price: 30$</b> size: 30cm</p>
-            <p><button>add to cart</button></p>
+        <div class="item">
+            <img src="img/bbq.PNG" alt="BBQ">
+            <p>BBQ</p>
         </div>
-        <img src="img/lowtab.png" alt="Lowtab Pizza" style="margin-left: -50px; height: 500px; width: 500px;">
-    </div>
-
-    <div class="ma">
-        <img src="img/hawaii.png" class="ha" alt="Hawaii" style="margin-left: 40px;">
-        <div class="ppb">
-            <h2>PIZZA HAWAII</h2>
-            <p>Ingredients: tomato sauce, ham, pineapple, mozzarella.</p>
-            <p>Description: The perfect sweet-and-savory combo of juicy pineapple and savory ham — a tropical twist on traditional pizza.</p>
-            <p><b>Price: 25$</b> size: 30cm</p>
-            <p><button>add to cart</button></p>
+        <div class="item">
+            <img src="img/bacon.PNG" alt="Bacon">
+            <p>Bacon</p>
         </div>
-        <img class="bacon" src="img/bacon.png" alt="Bacon" style="margin-left: -40px;">
-    </div>
-
-    <div class="ma">
-        <img class="bacon" src="img/bacon.png" alt="Bacon">
-        <div class="ppb" style="left: 85px;">
-            <h2>PIZZA PEPPERONI</h2>
-            <p>Ingredients: tomato sauce, mozzarella, pepperoni, oregano.</p>
-            <p>Description: Spicy, cheesy, and full of flavor — a timeless favorite for meat lovers.</p>
-            <p><b>Price: 25$</b> size: 30cm</p>
-            <p><button>add to cart</button></p>
+        <div class="item">
+            <img src="img/paprika.PNG" alt="Paprika">
+            <p>Paprika</p>
         </div>
-        <img src="img/peperoni.png" class="pe" alt="Pepperoni">
-    </div>
-
-    <div class="ma">
-        <img src="img/sweet.png" class="sw" alt="Sweet Dream" style="margin-left: 40px;">
-        <div class="ppb">
-            <h2>PIZZA SWEET DREAM</h2>
-            <p>Ingredients: Nutella, fresh strawberries, powdered sugar, mint.</p>
-            <p>Description: A dessert lover’s dream — warm pizza crust covered with creamy Nutella, juicy strawberries, and a touch of sweetness that melts in your mouth.</p>
-            <p><b>Price: 20$</b> size: 30cm</p>
-            <p><button>add to cart</button></p>
+        <div class="item">
+            <img src="img/hawaii.PNG" alt="Hawaii">
+            <p>Hawaii</p>
         </div>
-        <img class="bacon" src="img/bacon.png" alt="Bacon">
+        <div class="item">
+            <img src="img/peperoni.PNG" alt="Peperoni">
+            <p>Peperoni</p>
+        </div>
+        <div class="item">
+            <img src="img/sweet.PNG" alt="Sweet">
+            <p>Sweet</p>
+        </div>
     </div>
-
 </body>
 </html>

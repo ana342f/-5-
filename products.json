@@ -1,0 +1,17 @@
+[
+ {
+  "name": "Товар 1",
+  "price": 100,
+  "img": "img\/item1.jpg"
+ },
+ {
+  "name": "Товар 2",
+  "price": 200,
+  "img": "img\/item2.jpg"
+ },
+ {
+  "name": "Товар 3",
+  "price": 150,
+  "img": "img\/item3.jpg"
+ }
+]
